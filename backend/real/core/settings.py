@@ -68,7 +68,6 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -98,7 +97,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'core.wsgi.application'
+#WSGI_APPLICATION = 'core.wsgi.application'
 ASGI_APPLICATION = 'core.asgi.application'
 
 
@@ -207,9 +206,9 @@ CSRF_COOKIE_SECURE = True
 # CORS_ALLOWED_ORIGINS = [
 #     "http://localhost:3000", 
 # ]
-# CORS_ALLOWED_ORIGINS = [
-#     "https://conectoo.site", 
-# ]
+CORS_ALLOWED_ORIGINS = [
+    "https://conectoo.site", 
+]
 
 
 CHANNEL_LAYERS = {
