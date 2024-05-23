@@ -197,17 +197,19 @@ REST_FRAMEWORK = {
    )
 }
 
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 #CUSTOM_DOMAIN =  "http://127.0.0.1:8000"
 CUSTOM_DOMAIN = "https://backend.conectoo.site"
-# CORS_ALLOW_ALL_ORIGINS = True
+
 CSRF_COOKIE_SECURE = True
 # CORS_ALLOWED_ORIGINS = [
 #     "http://localhost:3000", 
 # ]
-CORS_ALLOWED_ORIGINS = [
-    "https://conectoo.site", 
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "https://conectoo.site", 
+# ]
 
 
 CHANNEL_LAYERS = {
