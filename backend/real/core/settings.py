@@ -197,11 +197,15 @@ REST_FRAMEWORK = {
 }
 
 
-CUSTOM_DOMAIN =  "http://127.0.0.1:8000"
+#CUSTOM_DOMAIN =  "http://127.0.0.1:8000"
+CUSTOM_DOMAIN = "https://backend.conectoo.site"
 CORS_ALLOW_ALL_ORIGINS = True
 CSRF_COOKIE_SECURE = True
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:3000", 
+# ]
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000", 
+    "https://conectoo.site", 
 ]
 
 
@@ -225,7 +229,7 @@ EMAIL_USE_TLS = True
 
 
 # Google OAuth2 settings
-BASE_FRONTEND_URL = os.environ.get('DJANGO_BASE_FRONTEND_URL', default='http://localhost:3000')
+BASE_FRONTEND_URL = os.environ.get('DJANGO_BASE_FRONTEND_URL', default= "https://conectoo.site", )
 GOOGLE_OAUTH2_CLIENT_ID = os.environ.get('GOOGLE_OAUTH2_CLIENT_ID')
 GOOGLE_OAUTH2_CLIENT_SECRET = os.environ.get('GOOGLE_OAUTH2_CLIENT_SECRET')
 
